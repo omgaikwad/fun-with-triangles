@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root{
+    --sky-blue: #A2DBFA;
+    --blue: #39A2DB;
+    --text-color: #053742;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 5rem;
+    padding: 2rem;
+    background-color: var(--sky-blue);
+}
+
+.body-container{
+    max-width: 50%;
+    justify-content: center;
+    margin: auto;
+}
+header{
+    background-color: var(--blue);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+header *{
+    display: inline;
+}
+
+header li{
+    margin: 1rem;
+}
+
+header li a{
+    text-decoration: none;
+    color: white;
+}
+
+.active-item{
+    font-weight: bolder;
+    border-bottom: 2px solid white;
+}
+
+footer{
+    background-color: var(--blue);
+    position: fixed;
+    height: 5rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+footer *{
+    display: inline;
+}
+
+footer li{
+    margin: 0.5rem;
+    
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: white;
+    font-weight: bold;
+    border-bottom: 2px solid white;
+}
+
+h1{
+    color: var(--blue);
+    text-align: center;
+}
+
+.input-container input{
+    display: block;
+    margin: auto;
+    padding: 0.5rem;
+    padding-right: 0;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+label{
+    font-size: large;
+    color: var(--blue);
+}
+
+button{
+    display: block;
+    width: 100%;
+    padding: 0.6rem 0.2rem;
+    margin: auto;
+    margin-top: 0.4rem;
+    background-color: var(--blue);
+    color: white;
+    font-size: large;
+    border: none;
+}
+
+#output-div{
+    text-align: center;
+    margin-top: 2rem;
+    color: var(--blue);
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.question-container{
+    color: var(--blue);
+    font-weight: bold;
+    margin-top: 1.6rem;
+    padding: 1rem;
+    border: 0.1rem solid var(--blue);
+    border-radius: 0.6rem;
+}
+
+.formula{
+    color: var(--blue);
+    text-align: center;
+    border: 0.1rem solid var(--blue);
+    border-radius: 0.6rem;
+    margin-bottom: 0.4rem;
+}

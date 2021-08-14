@@ -4,21 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
     <title>Area</title>
 </head>
 <body>
-    <h1>Check Area of Triangle</h1>
 
-    <label for="base-side">Base(in cm)</label>
-    <input type="number" id = "base-side">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Is It Triangle</a></li>
+                <li><a href="./triangleQuiz.html">Quiz</a></li>
+                <li><a href="./hypotenuse.html">Hypotenuse</a></li>
+                <li class="active-item"><a href="./areaOfTriangle.html">Area</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="body-container">
+        <h1>Check Area of Triangle</h1>
 
+        <div class="formula">
+            <h2>Area of a triangle = 1/2(Base * Height)</h2>
+        </div>
 
-    <label for="height-side">Height(in cm)</label>
-    <input type="number" id = "height-side">
+        <div class="input-container">
+            <label for="base-side">Base(in cm)</label>
+            <input type="number" id = "base-side">
+        </div>
+        <div class="input-container">
+            <label for="height-side">Height(in cm)</label>
+            <input type="number" id = "height-side">
+        </div>
+        
+        <button id="calculate-area-btn">Calculate Area</button>
+    
+        <div id="output-div"></div>
+    </div>
+    
 
-    <button id="calculate-area-btn">Calculate Area</button>
-
-    <div id="output-div"></div>
+    <footer>
+        <div class = "social-links">
+            <ul>
+                <li><a href="https://github.com/omgaikwad">github</a></li>
+                <li><a href="https://twitter.com/OmGaikwad_">twitter</a></li>
+                <li><a href="https://www.linkedin.com/in/omgaikwad1/">linkedIn</a></li>
+                <li><a href="https://omgaikwad.netlify.app/">portfolio</a></li>
+            </ul>
+        </div>
+    </footer>
 
     <script src="./areaOfTriangle.js"></script>
 </body>

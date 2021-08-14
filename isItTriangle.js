@@ -16,10 +16,10 @@ function isTriangle(){
         /// Handling Negative input errors
         if(inputs[0].value >=0 && inputs[1].value >=0 && inputs[2].value >= 0){
             if(sumOfAngles === 180){
-                outputDiv.innerText =  "IT IS Triangle!!";
+                outputDiv.innerText =  "🚀Yay, It Is a Triangle!!";
             }
             else{
-                outputDiv.innerText =  "It is NOT triangle :(";
+                outputDiv.innerText =  "😢Oh, It is NOT a triangle!!";
             }
         }
         else{

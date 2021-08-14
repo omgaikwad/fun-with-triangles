@@ -5,39 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    <title>Hypotenuse</title>
+    <title>Is It Triangle?</title>
 </head>
 <body>
 
     <header>
         <nav>
             <ul>
-                <li><a href="./index.html">Is It Triangle</a></li>
+                <li class="active-item"><a href="./index.html">Is It Triangle</a></li>
                 <li><a href="./triangleQuiz.html">Quiz</a></li>
-                <li class="active-item"><a href="./hypotenuse.html">Hypotenuse</a></li>
+                <li><a href="./hypotenuse.html">Hypotenuse</a></li>
                 <li><a href="./areaOfTriangle.html">Area</a></li>
             </ul>
         </nav>
     </header>
     
     <div class="body-container">
-        <h1>Check Hypotenuse</h1>
+        <h1>Is it Triangle?</h1>
 
-        <div class="formula">
-            <h2>Length of Hypotenuse = sqrt(a² + b²)</h2>
-        </div>
-
-        <div class="input-container">
-            <label>a = </label>
-            <input type="number" class="side-inputs">
-        </div>
-        <div class="input-container">
-            <label>b = </label>
-            <input type="number" class="side-inputs">
+        <div class="angle-container">
+            <div class="input-container">
+                <label for="angle1" class = "label-input">Angle 1(degrees):</label>
+                <input type="number" class="input-angles">
+            </div>
+            <div class="input-container" >
+                <label for="angle2" class = "label-input">Angle 2(degrees):</label>
+                <input type="number" class="input-angles">
+            </div>
+            <div class="input-container" >
+                <label for="angle3" class = "label-input">Angle 3(degrees):</label>
+                <input type="number" class="input-angles">
+            </div>
         </div>
         
-        <button id="calculate-hypotenuse-btn">Calculate Hypotenuse</button>
-
+    
+        <button id="is-it-triangle-btn">Is it Triangle?</button>
+    
         <div id="output-div"></div>
     </div>
 
@@ -52,6 +55,7 @@
         </div>
     </footer>
 
-    <script src="./hypotenuse.js"></script>
+
+    <script src="./isItTriangle.js"></script>
 </body>
 </html>
