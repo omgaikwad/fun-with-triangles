@@ -1,37 +1,33 @@
 const sides = document.querySelectorAll(".side-inputs");
-const calculateHypotenuseBtn = document.querySelector("#calculate-hypotenuse-btn");
+const calculateHypotenuseBtn = document.querySelector(
+  "#calculate-hypotenuse-btn"
+);
 const outputDiv = document.querySelector("#output-div");
 
+const calculateSumOfSquares = (a, b) => {
+  const answer = a * a + b * b;
+  return answer;
+};
 
-function calculateSumOfSquares(a, b){
-    const answer = a*a + b*b;
-    return answer;
-}
+const calculateHypotenuse = () => {
+  /// handling lack of input errors
+  if (sides[0].value && sides[1].value) {
+    /// handling negative number input errors
+    if (sides[0].value >= 0 && sides[1].value >= 0) {
+      const sumOfSquares = calculateSumOfSquares(
+        Number(sides[0].value),
+        Number(sides[1].value)
+      );
 
-function calculateHypotenuse(){
+      const hypotenuse = Math.sqrt(sumOfSquares);
 
-    /// handling lack of input errors
-    if(sides[0].value && sides[1].value){
-
-        /// handling negative number input errors
-        if(sides[0].value >=0 && sides[1].value >=0){
-            const sumOfSquares = calculateSumOfSquares(Number(sides[0].value), Number(sides[1].value));
-    
-            const hypotenuse = Math.sqrt(sumOfSquares);
-
-            outputDiv.innerText = "Hypotenuse is: " + hypotenuse;
-        }
-        else{
-            outputDiv.innerText = "Enter Positive Number only!!";
-        }
-        
+      outputDiv.innerText = "Hypotenuse is: " + hypotenuse;
+    } else {
+      outputDiv.innerText = "Enter Positive Number only!!";
     }
-
-    else{
-        outputDiv.innerText = "Enter all sides😡";
-    }
-    
-}
-
+  } else {
+    outputDiv.innerText = "Enter all sides😡";
+  }
+};
 
 calculateHypotenuseBtn.addEventListener("click", calculateHypotenuse);
